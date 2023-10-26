@@ -1,19 +1,16 @@
 package com.atguigu.mall.member.controller;
 
-import java.util.Arrays;
-import java.util.Map;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.atguigu.mall.member.entity.MemberEntity;
-import com.atguigu.mall.member.service.MemberService;
 import com.atguigu.mall.common.utils.PageUtils;
 import com.atguigu.mall.common.utils.R;
+import com.atguigu.mall.member.entity.MemberEntity;
+import com.atguigu.mall.member.feign.CouponFeignService;
+import com.atguigu.mall.member.service.MemberService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import javax.annotation.Resource;
+import java.util.Arrays;
+import java.util.Map;
 
 
 /**
@@ -28,6 +25,16 @@ import com.atguigu.mall.common.utils.R;
 public class MemberController {
     @Autowired
     private MemberService memberService;
+
+    @Resource
+    private CouponFeignService couponFeignService;
+
+    @RequestMapping("/testFeign")
+    public R testFeign() {
+        MemberEntity member = new MemberEntity();
+        member.setNickname("张三");
+        return R.ok().put("member", member).put("coupons", couponFeignService.memberCoupons());
+    }
 
     /**
      * 列表

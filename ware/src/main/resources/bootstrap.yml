@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: ware  #服务名
+  profiles:
+    active: dev #环境
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      config:
+        file-extension: yaml  #文件后缀名
+        namespace: 8e37517c-1a13-42b5-b390-df2b816cd8b0

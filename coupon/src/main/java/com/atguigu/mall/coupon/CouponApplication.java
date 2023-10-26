@@ -3,6 +3,8 @@ package com.atguigu.mall.coupon;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 
 /**
@@ -10,6 +12,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @MapperScan("com.atguigu.mall.coupon.dao")
+@EnableDiscoveryClient
+@EnableFeignClients(basePackages = "com.atguigu.mall.coupon.feign")
 public class CouponApplication {
 
     public static void main(String[] args) {

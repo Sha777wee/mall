@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: coupon  #服务名
+  profiles:
+    active: dev #环境
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      config:
+        file-extension: yaml  #文件后缀名
+        namespace: 02727b08-1527-486d-919a-964633138d28
