@@ -12,13 +12,13 @@
         <module name="coupon" />
         <module name="member" />
         <module name="ware" />
-        <module name="renren-fast" />
         <module name="order" />
-        <module name="renren-generator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="gulimall" target="1.8" />
+      <module name="renren-fast" target="1.8" />
+      <module name="renren-generator" target="1.8" />
       <module name="ware (1)" target="1.8" />
       <module name="ware (2)" target="1.8" />
     </bytecodeTargetLevel>
