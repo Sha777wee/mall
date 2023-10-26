@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -11,22 +12,26 @@
         <module name="coupon" />
         <module name="member" />
         <module name="ware" />
+        <module name="renren-fast" />
         <module name="order" />
+        <module name="renren-generator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="mall" target="1.8" />
+      <module name="gulimall" target="1.8" />
       <module name="ware (1)" target="1.8" />
       <module name="ware (2)" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="common" options="-parameters" />
+      <module name="common" options="" />
       <module name="coupon" options="-parameters" />
       <module name="member" options="-parameters" />
       <module name="order" options="-parameters" />
       <module name="product" options="-parameters" />
+      <module name="renren-fast" options="-parameters" />
+      <module name="renren-generator" options="-parameters" />
       <module name="ware" options="-parameters" />
       <module name="ware (1)" options="-parameters" />
       <module name="ware (2)" options="-parameters" />
