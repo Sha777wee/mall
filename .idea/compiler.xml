@@ -10,6 +10,7 @@
         <module name="product" />
         <module name="common" />
         <module name="coupon" />
+        <module name="test" />
         <module name="member" />
         <module name="ware" />
         <module name="renren-fast" />
@@ -34,6 +35,7 @@
       <module name="product" options="-parameters" />
       <module name="renren-fast" options="-parameters" />
       <module name="renren-generator" options="-parameters" />
+      <module name="test" options="-parameters" />
       <module name="ware" options="-parameters" />
       <module name="ware (1)" options="-parameters" />
       <module name="ware (2)" options="-parameters" />

@@ -1,19 +1,14 @@
 package com.atguigu.mall.product.controller;
 
-import java.util.Arrays;
-import java.util.Map;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
+import com.atguigu.mall.common.utils.R;
 import com.atguigu.mall.product.entity.CategoryEntity;
 import com.atguigu.mall.product.service.CategoryService;
-import com.atguigu.mall.common.utils.PageUtils;
-import com.atguigu.mall.common.utils.R;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -32,11 +27,11 @@ public class CategoryController {
     /**
      * 列表
      */
-    @RequestMapping("/list")
+    @RequestMapping("/list/tree")
     public R list(@RequestParam Map<String, Object> params) {
-        PageUtils page = categoryService.queryPage(params);
+        List<CategoryEntity> categoryEntities = categoryService.listWithTree();
 
-        return R.ok().put("page", page);
+        return R.ok().put("data", categoryEntities);
     }
 
 
@@ -75,8 +70,7 @@ public class CategoryController {
      */
     @RequestMapping("/delete")
     public R delete(@RequestBody Long[] catIds) {
-        categoryService.removeByIds(Arrays.asList(catIds));
-
+        categoryService.removeMenuByIds(Arrays.asList(catIds));
         return R.ok();
     }
 
