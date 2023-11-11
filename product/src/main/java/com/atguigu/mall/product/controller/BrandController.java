@@ -1,19 +1,15 @@
 package com.atguigu.mall.product.controller;
 
-import java.util.Arrays;
-import java.util.Map;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.atguigu.mall.product.entity.BrandEntity;
-import com.atguigu.mall.product.service.BrandService;
 import com.atguigu.mall.common.utils.PageUtils;
 import com.atguigu.mall.common.utils.R;
+import com.atguigu.mall.product.entity.BrandEntity;
+import com.atguigu.mall.product.service.BrandService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Arrays;
+import java.util.Map;
 
 
 /**
@@ -54,9 +50,8 @@ public class BrandController {
      * 保存
      */
     @RequestMapping("/save")
-    public R save(@RequestBody BrandEntity brand) {
+    public R save(@Validated @RequestBody BrandEntity brand) {
         brandService.save(brand);
-
         return R.ok();
     }
 

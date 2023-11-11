@@ -1,4 +1,5 @@
 io\renren\utils\Query.class
+io\renren\RenrenGenerateApplication.class
 io\renren\config\DbConfig.class
 io\renren\utils\RRExceptionHandler.class
 io\renren\config\MongoNullCondition.class
@@ -15,7 +16,6 @@ io\renren\entity\mongo\MongoDefinition.class
 io\renren\entity\ColumnEntity.class
 io\renren\utils\R.class
 io\renren\utils\RRException.class
-io\renren\RenrenApplication.class
 io\renren\config\MongoConfig.class
 io\renren\utils\DateUtils.class
 io\renren\dao\MongoDBGeneratorDao.class

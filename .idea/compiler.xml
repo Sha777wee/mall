@@ -10,17 +10,18 @@
         <module name="product" />
         <module name="common" />
         <module name="coupon" />
-        <module name="test" />
         <module name="member" />
         <module name="ware" />
         <module name="renren-fast" />
         <module name="gateway" />
         <module name="order" />
         <module name="renren-generator" />
+        <module name="third-party" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="gulimall" target="1.8" />
+      <module name="test" target="1.8" />
       <module name="ware (1)" target="1.8" />
       <module name="ware (2)" target="1.8" />
     </bytecodeTargetLevel>
@@ -36,6 +37,7 @@
       <module name="renren-fast" options="-parameters" />
       <module name="renren-generator" options="-parameters" />
       <module name="test" options="-parameters" />
+      <module name="third-party" options="-parameters" />
       <module name="ware" options="-parameters" />
       <module name="ware (1)" options="-parameters" />
       <module name="ware (2)" options="-parameters" />

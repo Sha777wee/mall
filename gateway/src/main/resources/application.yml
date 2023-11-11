@@ -26,6 +26,15 @@ spring:
           filters:
             - RewritePath=/api/?(?<segment>.*), /$\{segment}
 
+        - id: third-party
+          # 403错误，先写死本地
+          # uri: lb://product
+          uri: http://localhost:30000
+          predicates:
+            - Path=/api/thirdparty/**
+          filters:
+            - RewritePath=/api/thirdparty/(?<segment>.*), /$\{segment}
+
         - id: admin_route
           # 403错误，先写死本地
           # uri: lb://renren-fast

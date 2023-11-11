@@ -1,12 +1,12 @@
 package com.atguigu.mall.product.entity;
 
+import com.atguigu.mall.product.enums.ShowStatusEnum;
+import com.atguigu.mall.product.exception.EnumValid;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
-import java.util.Date;
-
-import lombok.Data;
 
 /**
  * 品牌
@@ -40,6 +40,7 @@ public class BrandEntity implements Serializable {
     /**
      * 显示状态[0-不显示；1-显示]
      */
+    @EnumValid(target = ShowStatusEnum.class)
     private Integer showStatus;
     /**
      * 检索首字母

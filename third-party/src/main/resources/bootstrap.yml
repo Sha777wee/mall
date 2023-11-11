@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: third-party  #服务名
+  profiles:
+    active: dev #环境
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      config:
+        file-extension: yaml  #文件后缀名
+        namespace: b3bb2c96-f462-4f3c-b900-b459c3d64603
