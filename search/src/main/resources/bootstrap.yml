@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: search  #服务名
+  profiles:
+    active: dev #环境
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      config:
+        file-extension: yaml  #文件后缀名
+        namespace: d71e3375-261c-4676-b1d8-1f6b0d783034

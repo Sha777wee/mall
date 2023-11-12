@@ -1,8 +1,8 @@
 package com.atguigu.mall.product.service;
 
-import com.baomidou.mybatisplus.extension.service.IService;
 import com.atguigu.mall.common.utils.PageUtils;
 import com.atguigu.mall.product.entity.SpuInfoEntity;
+import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.Map;
 
@@ -16,5 +16,7 @@ import java.util.Map;
 public interface SpuInfoService extends IService<SpuInfoEntity> {
 
     PageUtils queryPage(Map<String, Object> params);
+
+    void up(Long spuId);
 }
 
