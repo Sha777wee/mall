@@ -72,7 +72,7 @@ public class SpuInfoServiceImpl extends ServiceImpl<SpuInfoDao, SpuInfoEntity> i
         }).collect(Collectors.toList());
 
         // TO 将数据发送给es进行保存
-        
+
     }
 
 }

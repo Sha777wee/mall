@@ -1,8 +1,8 @@
 package com.atguigu.mall.product.service;
 
-import com.baomidou.mybatisplus.extension.service.IService;
 import com.atguigu.mall.common.utils.PageUtils;
 import com.atguigu.mall.product.entity.ProductAttrValueEntity;
+import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.Map;
 
