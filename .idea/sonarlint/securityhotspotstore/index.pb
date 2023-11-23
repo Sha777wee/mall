@@ -21,3 +21,9 @@ C
 search/HELP.md,8\0\802f3b8fa6cc4a881ee50ca7db3aed0d14fc8a9e
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+ˆ
+Xproduct/src/main/java/com/atguigu/mall/product/service/AttrAttrgroupRelationService.java,6\f\6fdcb7e5c7a8051efa66abd870f244a157c8ca78
+|
+Lproduct/src/main/java/com/atguigu/mall/product/service/AttrGroupService.java,e\d\ed29c6128ff8592fca814789e1adb5fd3327e695
+Ž
+^product/src/main/java/com/atguigu/mall/product/controller/AttrAttrgroupRelationController.java,1\1\11b851aa230a7958dbafb9850b429ee01008cc2f

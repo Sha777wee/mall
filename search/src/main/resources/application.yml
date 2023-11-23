@@ -4,5 +4,7 @@ spring:
   redis:
     host: 172.21.9.226
     port: 6379
+  elasticsearch:
+    uris: [ http://172.21.9.226:9200 ]
 application:
   name: search
