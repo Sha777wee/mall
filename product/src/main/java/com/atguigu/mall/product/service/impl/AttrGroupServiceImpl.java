@@ -1,18 +1,18 @@
 package com.atguigu.mall.product.service.impl;
 
-import org.springframework.stereotype.Service;
-
-import java.util.Map;
-
+import com.atguigu.mall.common.utils.PageUtils;
+import com.atguigu.mall.common.utils.Query;
+import com.atguigu.mall.product.dao.AttrGroupDao;
+import com.atguigu.mall.product.entity.AttrGroupEntity;
+import com.atguigu.mall.product.entity.SkuItemVo;
+import com.atguigu.mall.product.service.AttrGroupService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.atguigu.mall.common.utils.PageUtils;
-import com.atguigu.mall.common.utils.Query;
+import org.springframework.stereotype.Service;
 
-import com.atguigu.mall.product.dao.AttrGroupDao;
-import com.atguigu.mall.product.entity.AttrGroupEntity;
-import com.atguigu.mall.product.service.AttrGroupService;
+import java.util.List;
+import java.util.Map;
 
 
 @Service("attrGroupService")
@@ -26,6 +26,12 @@ public class AttrGroupServiceImpl extends ServiceImpl<AttrGroupDao, AttrGroupEnt
         );
 
         return new PageUtils(page);
+    }
+
+    @Override
+    public List<SkuItemVo.SpuItemSalAttrGroupVo> getAttrGroupWithAttrsBySpuId(Long spuId) {
+        
+        return null;
     }
 
 }

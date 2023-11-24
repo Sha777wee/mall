@@ -1,9 +1,11 @@
 package com.atguigu.mall.product.service;
 
-import com.baomidou.mybatisplus.extension.service.IService;
 import com.atguigu.mall.common.utils.PageUtils;
 import com.atguigu.mall.product.entity.AttrGroupEntity;
+import com.atguigu.mall.product.entity.SkuItemVo;
+import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -16,5 +18,7 @@ import java.util.Map;
 public interface AttrGroupService extends IService<AttrGroupEntity> {
 
     PageUtils queryPage(Map<String, Object> params);
+
+    List<SkuItemVo.SpuItemSalAttrGroupVo> getAttrGroupWithAttrsBySpuId(Long spuId);
 }
 

@@ -23,7 +23,5 @@ C
 third-party/pom.xml,f\3\f3b7d6f162911c84c9f8c0bbd945910e0f0703f8
 ˆ
 Xproduct/src/main/java/com/atguigu/mall/product/service/AttrAttrgroupRelationService.java,6\f\6fdcb7e5c7a8051efa66abd870f244a157c8ca78
-|
-Lproduct/src/main/java/com/atguigu/mall/product/service/AttrGroupService.java,e\d\ed29c6128ff8592fca814789e1adb5fd3327e695
 Ž
 ^product/src/main/java/com/atguigu/mall/product/controller/AttrAttrgroupRelationController.java,1\1\11b851aa230a7958dbafb9850b429ee01008cc2f
