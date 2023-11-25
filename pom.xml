@@ -19,6 +19,9 @@
         <module>gateway</module>
         <module>third-party</module>
         <module>search</module>
+        <module>auth-server</module>
+        <module>sso-client-test</module>
+        <module>sso-server-test</module>
         <module>zrenren-generator</module>
         <module>zrenren-fast</module>
     </modules>

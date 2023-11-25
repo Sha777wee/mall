@@ -19,8 +19,6 @@ C
 third-party/pom.xml,f\3\f3b7d6f162911c84c9f8c0bbd945910e0f0703f8
 >
 search/HELP.md,8\0\802f3b8fa6cc4a881ee50ca7db3aed0d14fc8a9e
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 ˆ
 Xproduct/src/main/java/com/atguigu/mall/product/service/AttrAttrgroupRelationService.java,6\f\6fdcb7e5c7a8051efa66abd870f244a157c8ca78
 Ž

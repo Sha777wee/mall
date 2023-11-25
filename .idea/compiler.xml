@@ -8,15 +8,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="product" />
+        <module name="coupon" />
+        <module name="auth-server" />
+        <module name="ware" />
+        <module name="renren-generator" />
         <module name="search" />
         <module name="common" />
-        <module name="coupon" />
+        <module name="sso-client-test" />
         <module name="member" />
-        <module name="ware" />
         <module name="renren-fast" />
+        <module name="sso-server-test" />
         <module name="gateway" />
         <module name="order" />
-        <module name="renren-generator" />
         <module name="third-party" />
       </profile>
     </annotationProcessing>
@@ -29,6 +32,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auth-server" options="-parameters" />
       <module name="common" options="" />
       <module name="coupon" options="-parameters" />
       <module name="gateway" options="-parameters" />
@@ -38,6 +42,8 @@
       <module name="renren-fast" options="-parameters" />
       <module name="renren-generator" options="-parameters" />
       <module name="search" options="-parameters" />
+      <module name="sso-client-test" options="-parameters" />
+      <module name="sso-server-test" options="-parameters" />
       <module name="test" options="-parameters" />
       <module name="third-party" options="-parameters" />
       <module name="ware" options="-parameters" />
